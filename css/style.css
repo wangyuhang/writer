@@ -223,10 +223,61 @@ transition:background-color .5s;
 .footer .logo img{width:138px; height:57px;}
 .footer .nav a{display:inline-block; margin:0 20px;}
 
+/*comm_nav*/
+.comm_nav{background-color:#fff;}
+.comm_nav h1{float:left;}
+.comm_nav h1 img{width:180px; height:70px;}
+.comm_nav .nav{width:663px; height:40px; line-height:40px; margin-top:20px; float:right; background:url(../images/home_nav_bg.png) no-repeat bottom;}
+.comm_nav .nav ul li{margin-left:40px; float:left; position:relative; z-index:10;}
+.comm_nav .nav .grey_cor{display:inline-block; width:18px; height:14px; background:url(../images/grey_cor.png);}
+.comm_nav .nav .has_sub_nav{width:120px;}
+.comm_nav .nav .has_sub_nav .sub_nav{display:none; padding:5px; background-color:#fff; text-align:center; border:1px solid #eee; box-shadow:2px 2px 2px #39afe1;}
+.comm_nav .nav .has_sub_nav:hover .sub_nav{display:block;}
 
+/*main*/
+.main{padding:30px 0 50px 0; background-color:#fff;}
 
+/*user_center_nav*/
+.user_center_nav{text-align:center;}
+.user_center_nav a,.user_center_nav span{display:inline-block; width:115px; height: 130px; margin-right:40px;}
+.user_center_nav a.order_btn{background:url(../images/dd_btn.png);}
+.user_center_nav span.order_btn{background:url(../images/dd_btn_hover.png);}
+.user_center_nav a.data_btn{background:url(../images/zl_btn.png);}
+.user_center_nav span.data_btn{background:url(../images/zl_btn_hover.png);}
+.user_center_nav a.create_btn{background:url(../images/xjdd_btn.png);}
+.user_center_nav span.create_btn{background:url(../images/xjdd_btn_hover.png);}
 
+/*progress_nav*/
+.progress_nav{margin-top:50px; text-align:center;}
+.progress_nav img{display:inline-block;}
 
+/*progress_box*/
+.progress_box{width:630px; margin:30px auto 0 auto; border:1px solid #dedede;}
+.progress_box h3{height:40px; line-height:40px; background-color:#e1eef3;}
+.progress_box h3 .ch{margin-left:20px; font-size:18px; font-family:"微软雅黑"; color:#159ed8;}
+.progress_box h3 .en{margin-left:20px; font-size: 14px; color:#898686;}
+.progress_box .form_content{padding:35px 0;}
+.progress_box .item_cell{width:450px; margin:25px auto 0 auto; position:relative;}
+.progress_box .item_cell label{width:120px; padding-right:10px; line-height:45px; float:left; text-align:right;}
+.progress_box .item_cell input[type="text"]{width:250px; height:23px; padding:10px; border:1px solid #d0d0d0; float:left;}
+.progress_box .item_cell .btn{display:inline-block; width:45px; height:43px; line-height:43px; text-align:center; margin-left:-1px; border:1px solid #d0d0d0; background:url(../images/input_btn.gif); float:left;}
+.progress_box .item_cell .on{background:url(../images/input_btn_hover.gif);}
+.progress_box .item_cell .drop_down_box{width:316px; border:1px solid #d0d0d0; position:absolute; left:130px; top:44px; background-color:#fff; box-shadow:2px 2px 2px #eee; z-index:2;}
+.progress_box .item_cell .drop_down_box a{display:block; height:45px; padding-left:20px; line-height:45px;}
+.progress_box .item_cell .drop_down_box a:hover{background-color:#8fc5dc; color:#fff;}
+.submit_btn{display:block; width:155px; height: 48px; line-height:48px; margin:25px auto 0 auto; text-align:center; background-color:#3daedd; color:#fff;}
+.submit_btn:hover{background-color:#159ed8; color:#fff;}
+.progress_box .item_cell .mark_btn,.progress_box .item_cell .download_btn,.progress_box .item_cell .upload_btn{background-image:none; font-size:20px; color:#14a0dd；}
+.progress_box .item_cell .download_btn,.progress_box .item_cell .upload_btn{font-size:14px; background-color:#169ed8; color:#fff;}
+.progress_box .item_cell .short_input[type="text"]{width:205px; margin-left:-1px;}
+.progress_box .item_cell input[type="radio"]{width:30px; height:40px; float:left;}
+.progress_box .item_cell .radio_label{width:50px; float:left; text-align:left;}
+.confirmation_box{margin:25px 30px 0 30px; border-top:1px solid #d0d0d0;}
+.confirmation_box p{margin-top:10px; color:#999;}
+.confirmation_box p .label{font-weight:bold; color:#333;}
+.progress_box .payment_item_cell{width:200px;}
+.progress_box .payment_item_cell input[type="radio"]{height:60px;}
+.progress_box .payment_item_cell label{height:70px;}
 
 
 

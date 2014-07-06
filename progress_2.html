@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>writer_home</title>
+<link href="css/style.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/slide.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		//下拉框显示
+		$(".selectBtn").click(function(){
+			$(this).find(".dropDownBox").show();
+			$(this).find(".btn").addClass("on");
+		});
+
+		//复制选中下拉框内容到input
+		$(".dropDownBox a").click(function() {
+			var val = $(this).html();
+			$(this).parent().siblings("input").val(val);
+			closeDropDownFun();
+		});
+
+		//关闭下拉框
+		function closeDropDownFun(){
+			var dropDownBox = $(".dropDownBox");
+			dropDownBox.hide();
+			dropDownBox.siblings("a").removeClass("on");
+		}
+
+		$(document).click(function(e) {
+			var ele = $(e.target),
+				eleClass = ele.attr("class");
+			if(!ele.parent().hasClass("selectBtn")){
+				closeDropDownFun();
+			}
+		});
+
+	});
+</script>
+</head>
+
+<body>
+	<div class="home_container">
+		<div class="head">
+			<div class="constr tr">
+				<span>XXX欢迎来到Writerpark</span>
+				<a href="#">登录</a>
+				<a href="#">注册</a>
+			</div>
+		</div>
+
+
+		<div class="main">
+			<div class="comm_nav">
+				<div class="constr">
+					<div class="fix">
+						<h1><img src="images/logo.png" title="Writerpark"></h1>
+						<div class="nav fix">
+							<ul>
+								<li><a href="#">首页</a></li>
+								<li class="has_sub_nav">
+									<a href="javascript:;">留学文书撰写<i class="grey_cor"></i></a>
+									<div class="sub_nav">
+										<div><a href="#">个人陈述PS撰写</a></div>
+										<div><a href="#">简历CV撰写</a></div>
+									</div>
+								</li>
+								<li><a href="#">服务流程</a></li>
+								<li><a href="#">价格</a></li>
+								<li><a href="#">关于我们</a></li>
+								<li><a href="#">常见问题</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="user_center_nav">
+				<a class="order_btn" href="#"></a>
+				<a class="data_btn" href="#"></a>
+				<span class="create_btn"></span>
+			</div>
+
+			<div class="progress_nav">
+				<img src="images/progress_bar_2.gif" />
+			</div>
+
+			<div class="progress_box">
+				<h3><span class="ch">填写信息</span><span class="en">Please fill up information below</span></h3>
+				<form id="submitProgress1" action="">
+					<div class="form_content">
+						<div class="selectBtn item_cell fix" style="z-index:2">
+							<label>初稿期限:</label><input name="" type="text" />
+							<a class="btn" href="javascript:;"></a>
+							<div class="dropDownBox drop_down_box" style="display:none">
+								<a href="javascript:;">24hrs</a>
+								<a href="javascript:;">48hrs</a>
+								<a href="javascript:;">3days</a>
+								<a href="javascript:;">7days</a>
+							</div>
+						</div>
+						<div class="item_cell fix" style="z-index:1">
+							<label>页数(275words):</label>
+							<a class="btn mark_btn" href="javascript:;">-</a>
+							<input class="short_input" type="text" />
+							<a class="btn mark_btn" href="javascript:;">+</a>
+						</div>
+						<div class="item_cell fix" style="z-index:1">
+							<label>收集表是否翻译:</label>
+							<input name="tran_or_not" type="radio" value="">
+							<label class="radio_label">翻译</label>
+							<input name="tran_or_not" type="radio" value="">
+							<label class="radio_label">不翻译</label>
+						</div>
+						<div class="item_cell fix" style="z-index:1">
+							<label>折扣码:</label>
+							<input name="" type="text" />
+						</div>
+						<div class="confirmation_box">
+							<p>
+								<span class="label">小计：</span>
+								<span>894</span>
+								<span>RMB></span>
+								<span>(24hrs,Double spaced,1页*894RMB/页)</span>
+							</p>
+							<p>
+								<span class="label">翻译价格：</span>
+								<span>0.00</span>
+								<span>RMB></span>
+							</p>
+							<p>
+								<span class="label">折扣：</span>
+								<span>0.00</span>
+								<span>RMB></span>
+							</p>
+							<p>
+								<span class="label">共计金额：</span>
+								<span>0.00</span>
+								<span>RMB></span>
+							</p>
+						</div>
+						<div><a class="submit_btn" href="javascript:;">下一步</a></div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		
+
+		<div class="footer">
+			<div class="constr">
+				<div class="logo"><img src="images/logo.png"></div>
+				<div class="nav mt10">
+					<a href="#" target="_blank">首页</a>
+					<a href="#" target="_blank">留学文书撰写</a>
+					<a href="#" target="_blank">价格</a>
+					<a href="#" target="_blank">关于我们</a>
+					<a href="#" target="_blank">常见问题</a>
+				</div>
+				<div class="mt10">版权所有：WordSunny 地址：西安市雁塔区朱雀街132号阳阳国际广场B座17层 陕ICP备11005121号</div>
+			</div>
+		</div>
+	</div>
+</body>
