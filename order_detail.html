@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>writer_home</title>
+<link href="css/style.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/slide.js"></script>
+<script type="text/javascript">
+(function($){
+	$(document).ready(function() {
+		$("#msgList ul li").click(function() {
+			$(this).siblings().removeClass("on");
+			$(this).addClass("on");
+		});
+	});
+})(jQuery)
+</script>
+</head>
+
+<body>
+	<div>
+		<div class="head">
+			<div class="constr tr">
+				<span>XXX欢迎来到Writerpark</span>
+				<a href="#">登录</a>
+				<a href="#">注册</a>
+			</div>
+		</div>
+
+
+		<div class="main">
+			<div class="comm_nav">
+				<div class="constr">
+					<div class="fix">
+						<h1><img src="images/logo.png" title="Writerpark"></h1>
+						<div class="nav fix">
+							<ul>
+								<li><a href="#">首页</a></li>
+								<li class="has_sub_nav">
+									<a href="javascript:;">留学文书撰写<i class="grey_cor"></i></a>
+									<div class="sub_nav">
+										<div><a href="#">个人陈述PS撰写</a></div>
+										<div><a href="#">简历CV撰写</a></div>
+									</div>
+								</li>
+								<li><a href="#">服务流程</a></li>
+								<li><a href="#">价格</a></li>
+								<li><a href="#">关于我们</a></li>
+								<li><a href="#">常见问题</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="user_center_nav">
+				<span class="order_btn" href="#"></span>
+				<a class="data_btn" href="#"></a>
+				<a class="create_btn" href="#"></a>
+			</div>
+
+			<div class="constr">
+				<div class="order_table">
+					<h3 class="fix">
+						<div class="l">
+							<span>订单号</span>
+							<span class="blue">23423423234</span>
+							<span>您的订单待付款，XXXXXXXX</span>
+						</div>
+						<div class="r">
+							<span class="blue">￥890.00元</span>
+							<a class="pay_btn" href="javascript:;">支付</a>
+						</div>
+					</h3>
+
+					<div class="table_body fix">
+						<div class="left_box">
+							<div>消息（<span class="blue">3</span>）<a class="btn" href="javascript:;">+发布消息</a></div>
+							<div class="msg_list" id="msgList">
+								<ul>
+									<li class="on fix">
+										<a href="javascript:;">
+											<i></i>
+											<span class="name">wangyuhang@163.com</span>
+											<span class="title">阿打发的法师打发</span>
+											<span class="date">2014/11/11 23:33:33</span>
+										</a>
+										<p>阿打发的法师打发阿打发的法师打发阿打发的法师打发阿打发的法师打发阿打发的法师打发</p>
+									</li>
+									<li class="fix">
+										<a href="javascript:;">
+											<i></i>
+											<span class="name">wangyuhang@163.com</span>
+											<span class="title">阿打发的法师打发</span>
+											<span class="date">2014/11/11 23:33:33</span>
+										</a>
+										<p>阿打发的法师打发阿打发的法师打发阿打发的法师打发阿打发的法师打发阿打发的法师打发</p>
+									</li>
+									<li class="fix">
+										<a href="javascript:;">
+											<i></i>
+											<span class="name">wangyuhang@163.com</span>
+											<span class="title">阿打发的法师打发</span>
+											<span class="date">2014/11/11 23:33:33</span>
+										</a>
+										<p>阿打发的法师打发阿打发的法师打发阿打发的法师打发阿打发的法师打发阿打发的法师打发</p>
+									</li>
+									<li class="fix">
+										<a href="javascript:;">
+											<i></i>
+											<span class="name">wangyuhang@163.com</span>
+											<span class="title">阿打发的法师打发</span>
+											<span class="date">2014/11/11 23:33:33</span>
+										</a>
+										<p>阿打发的法师打发阿打发的法师打发阿打发的法师打发阿打发的法师打发阿打发的法师打发</p>
+									</li>
+								</ul>
+							</div>
+
+							<div class="mt30 bd30">附件上传（<span class="blue">2</span>）<a class="btn" href="javascript:;">+上传附件</a></div>
+							<div class="msg_list" id="msgList">
+								<ul>
+									<li class="fix">
+										<a href="javascript:;"><i></i>文件.doc</a>
+									</li>
+									<li class="fix">
+										<a href="javascript:;"><i></i>文件.doc</a>
+									</li>
+								</ul>
+							</div>
+
+
+						</div>
+						<div class="cell">
+							<h4>订单详细</h4>
+							<div>项目：个人简历</div>
+							<div>类型：定制写作</div>
+							<div>初稿期限：24hr</div>
+							<div>页数：1（页）</div>
+							<div>信息搜索表是否需要翻译：否</div>
+							<div>折扣码：0%</div>
+						</div>
+					</div>
+
+					
+
+				</div>
+
+
+
+
+			</div>
+
+
+
+
+		</div>
+
+			
+
+		
+
+		<div class="footer">
+			<div class="constr">
+				<div class="logo"><img src="images/logo.png"></div>
+				<div class="nav mt10">
+					<a href="#" target="_blank">首页</a>
+					<a href="#" target="_blank">留学文书撰写</a>
+					<a href="#" target="_blank">价格</a>
+					<a href="#" target="_blank">关于我们</a>
+					<a href="#" target="_blank">常见问题</a>
+				</div>
+				<div class="mt10">版权所有：WordSunny 地址：西安市雁塔区朱雀街132号阳阳国际广场B座17层 陕ICP备11005121号</div>
+			</div>
+		</div>
+	</div>
+</body>
