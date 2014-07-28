@@ -11,12 +11,21 @@
 	$(document).ready(function() {
 		var uploadInfo = $("#uploadInfo"),
 			uploadInput = $("#uploadInput"),
-			uploadBtn = $("#uploadBtn");
+			uploadBtn = $("#uploadBtn"),
+			fileUploadReturn = $("#fileUploadReturn"),
+			fileForm = $("#fileForm");
 		uploadBtn.click(function() {
 			uploadInfo.click();
 		});
 		uploadInfo.change(function(){
-			uploadInput.val($(this).val());
+			fileForm.submit();
+		});
+
+		fileUploadReturn.load(function() {
+			var data = $(window.frames["fileUploadReturn"].document.body).find("#result").html();
+			if(data != null) {
+				uploadInput.val(data);
+			}
 		});
 	});
 
@@ -87,7 +96,10 @@
 							<div class="mb10">上传信息收集表:</div>
 							<input id="uploadInput" name="" type="text" readonly="readonly" />
 							<a id="uploadBtn" class="btn upload_btn" href="javascript:;">上传</a>
-							<input id="uploadInfo" type="file" class="dn">
+							<from id="fileForm" method="post" action="post.php" target="uploadInfo" enctype="multipart/form-data">
+								<input id="uploadInfo" type="file" name="upload_file" class="dn">
+							</from>
+							<iframe id="fileUploadReturn" name="fileUploadReturn"></iframe> 
 						</div>
 						
 						<div class="confirmation_box">
