@@ -18,11 +18,12 @@
 			uploadInfo.click();
 		});
 		uploadInfo.change(function(){
-			fileForm.submit();
+			fileForm.click();
 		});
 
 		fileUploadReturn.load(function() {
 			var data = $(window.frames["fileUploadReturn"].document.body).find("#result").html();
+			console.log(data);
 			if(data != null) {
 				uploadInput.val(data);
 			}
@@ -84,7 +85,6 @@
 
 			<div class="progress_box">
 				<h3><span class="ch">上传素材</span><span class="en">Please Upload Material</span></h3>
-				<form id="submitProgress1" action="">
 					<div class="form_content">
 						<div class="item_cell fix" style="z-index:2">
 							<div class="mb10">下载信息收集表:</div>
@@ -96,9 +96,10 @@
 							<div class="mb10">上传信息收集表:</div>
 							<input id="uploadInput" name="" type="text" readonly="readonly" />
 							<a id="uploadBtn" class="btn upload_btn" href="javascript:;">上传</a>
-							<from id="fileForm" method="post" action="post.php" target="uploadInfo" enctype="multipart/form-data">
+							<form method="post" action="post.html" target="fileUploadReturn" enctype="multipart/form-data">
 								<input id="uploadInfo" type="file" name="upload_file" class="dn">
-							</from>
+								<input id="fileForm" type="submit" class="dn">
+							</form>
 							<iframe id="fileUploadReturn" name="fileUploadReturn"></iframe> 
 						</div>
 						
@@ -127,7 +128,6 @@
 						</div>
 						<div><a class="submit_btn" href="javascript:;">下一步</a></div>
 					</div>
-				</form>
 			</div>
 		</div>
 
