@@ -7,11 +7,21 @@
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="js/slide.js"></script>
 <script type="text/javascript">
+(function($){
 	$(document).ready(function() {
-
-		
-
+		var uploadInfo = $("#uploadInfo"),
+			uploadInput = $("#uploadInput"),
+			uploadBtn = $("#uploadBtn");
+		uploadBtn.click(function() {
+			uploadInfo.click();
+		});
+		uploadInfo.change(function(){
+			uploadInput.val($(this).val());
+		});
 	});
+
+})($)
+	
 </script>
 </head>
 
@@ -75,9 +85,9 @@
 						</div>
 						<div class="item_cell fix" style="z-index:2">
 							<div class="mb10">上传信息收集表:</div>
-							<input name="" type="text" readonly="readonly" />
-							<a class="btn upload_btn" href="javascript:;">上传</a>
-							
+							<input id="uploadInput" name="" type="text" readonly="readonly" />
+							<a id="uploadBtn" class="btn upload_btn" href="javascript:;">上传</a>
+							<input id="uploadInfo" type="file" class="dn">
 						</div>
 						
 						<div class="confirmation_box">
