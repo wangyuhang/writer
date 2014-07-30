@@ -239,6 +239,7 @@ transition:background-color .5s;
 .progress_box h3{height:40px; line-height:40px; background-color:#e1eef3;}
 .progress_box h3 .ch{margin-left:20px; font-size:18px; font-family:"微软雅黑"; color:#159ed8;}
 .progress_box h3 .en{margin-left:20px; font-size: 14px; color:#898686;}
+.progress_box h3 .num{font-size:14px; color:#159ed8;}
 .progress_box .form_content{padding:35px 0;}
 .progress_box .item_cell{width:450px; margin:25px auto 0 auto; position:relative;}
 .progress_box .item_cell label{width:120px; padding-right:10px; line-height:45px; float:left; text-align:right;}
@@ -261,6 +262,10 @@ transition:background-color .5s;
 .progress_box .payment_item_cell{width:200px;}
 .progress_box .payment_item_cell input[type="radio"]{height:60px;}
 .progress_box .payment_item_cell label{height:70px;}
+.progress_result_box{padding:20px; text-align:center;}
+.progress_result_box .pay_info{font-size:20px; color:#159ed8;}
+.progress_result_box .pay_info i{display:inline-block; width:45px; height:45px; background:url(../images/right.jpg); vertical-align:middle;}
+.progress_result_box .other_info{font-size:16px; color:#898686; margin-top:10px;}
 
 /*f_q_container*/
 .f_q_container{background-color:#fff;}
